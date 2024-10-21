@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haga su reserva</title>
+</head>
+<body style="background-color: blanchedalmond;">
+   <form action="procesareserva.php" method="get">
+    <fieldset style="border-color: rgba(111, 91, 226, 0.719);">
+    <legend >Datos personales</legend>
+    <p> <label for="nom"> Nombre: </label><input style="border: 2px solid red;" type="text" name="nombre" required id="nom" maxlength="100"></p>
+    <p><label for="apell">Apellidos: </label><input style="border: 2px solid red;" type="text" name="Apellidos" id="apell" maxlength="100"></p>
+    <p><label for="DNI">DNI </label><input style="border: 2px solid blue;" type="text" name="DNI" id="DNI" maxlength="10" placeholder="DNI con letra"></p>
+</fieldset>
+<fieldset style="border-color: rgba(111, 91, 226, 0.719);">
+    <legend>Datos de su estancia</legend>
+    <label for="Individual">Individual:</label>
+    <input type="radio" value="I" id="Individual" name="habitacion">
+    <label for="Doble">Doble:</label>
+    <input type="radio" value="D" id="Doble" name="habitacion">
+    <label for="Triple">Triple:</label>
+    <input type="radio" value="T" id="Triple" name="habitacion">
+    <p><label for="">  Numero de personas</label>
+        <select name="tipohab" id="tipo">
+            <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select></p>
+    <p>Llevo Mascotas<input type="checkbox"></p>
+    <p>Fecha de llegada <input style="border-color: blue;" type="date"></p>
+    <p>Hora de llegada <input style="border-color: red;" type="time"></p>
+    <input style="color: blue;" type="submit" value="Enviar">
+    <input style="color: red;" type="reset" value="Reiniciar">
+
+</fieldset>
+
+   </form>
+</body>
+</html>
